@@ -47,10 +47,11 @@ body {
 
 .overlay-card {
   position: absolute;
-  height: 3rem;
   bottom: 2rem;
   background-color: #2d3436a0;
   padding: 0 1rem;
+  text-align: center;
+  max-width: 90%;
 }
 
 .overlay-card h1 {
