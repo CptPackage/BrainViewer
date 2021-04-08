@@ -1,0 +1,60 @@
+:root {
+  --overlay-stroke-color: #34495e;
+  --overlay-fill-color: #34495ea0;
+}
+
+body {
+  height: 100vh;
+}
+
+.font-montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  position: relative;
+  padding: 0.2rem 0;
+}
+
+.brain {
+  max-height: 99vh;
+  max-width: 100%;
+}
+
+.brain--overlay {
+  position: absolute;
+  width: 92%;
+}
+
+.section {
+  --stroke-animation-speed: 0.2s;
+  --fill-animation-speed: 0.2s;
+  stroke: transparent;
+  fill: transparent;
+  transition: fill var(--fill-animation-speed) ease-in-out,
+    stroke var(--stroke-animation-speed) ease-in-out;
+  cursor: pointer;
+}
+
+.section:hover {
+  stroke: var(--overlay-fill-color);
+  fill: var(--overlay-fill-color);
+}
+
+.overlay-card .visible {
+  display: block;
+}
+
+.overlay-card {
+  position: absolute;
+  height: 3rem;
+  bottom: 2rem;
+  background-color: #2d3436a0;
+  padding: 0 1rem;
+}
+
+.overlay-card h1 {
+  color: #ecf0f1;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
