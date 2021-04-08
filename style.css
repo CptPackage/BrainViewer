@@ -33,8 +33,9 @@ body {
 }
 
 .modal-dialog {
-  width: 90% !important;
+  width: 100% !important;
   max-width: 100% !important;
+  margin: 1rem 0 !important;
 }
 
 .section {
